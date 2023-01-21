@@ -1,0 +1,14 @@
+#NavBar {
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  height: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .menuItem {
+    text-align: center;
+    font-size: 0.75em;
+  }
+}
