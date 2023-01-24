@@ -6,21 +6,21 @@ import "./NavBar.scss";
 function NavBar() {
   return (
     <div id="NavBar">
-      <MenuItem theLink="/Home" info="Home" />
+      <MenuItem theLink="/cleaning-site/Home" info="Home" />
       <MenuItem
-        theLink="/Services"
+        theLink="/cleaning-site/Services"
         info="Services"
         additionalClassNames={["dropdown"]}
         additionalMenuItems={[
           <div className="dropdown-content">
-            <MenuItem theLink="/Services" info="Service1" />
-            <MenuItem theLink="/Services" info="Service2" />
-            <MenuItem theLink="/Services" info="Service3" />
+            <MenuItem theLink="/cleaning-site/Services" info="Service1" />
+            <MenuItem theLink="/cleaning-site/Services" info="Service2" />
+            <MenuItem theLink="/cleaning-site/Services" info="Service3" />
           </div>,
         ]}
       />
-      <MenuItem theLink="/AboutUs" info="About Us" />
-      <MenuItem theLink="/Contact" info="Contact" />
+      <MenuItem theLink="/cleaning-site/AboutUs" info="About Us" />
+      <MenuItem theLink="/cleaning-site/Contact" info="Contact" />
     </div>
   );
 }

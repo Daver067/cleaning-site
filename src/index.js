@@ -12,24 +12,24 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/cleaning-site",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/Home",
+        path: "/cleaning-site/Home",
         element: <Home />,
       },
       {
-        path: "/Contact",
+        path: "/cleaning-site/Contact",
         element: <Contact />,
       },
       {
-        path: "Services",
+        path: "/cleaning-site/Services",
         element: <Services />,
       },
       {
-        path: "/AboutUs",
+        path: "/cleaning-site/AboutUs",
         element: <AboutUs />,
       },
     ],
