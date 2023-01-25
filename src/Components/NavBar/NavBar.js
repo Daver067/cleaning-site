@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from "react";
 import MenuItem from "./MenuItem";
 
-import "./NavBar.scss";
-
 function NavBar() {
   return (
     <div id="NavBar">
       <MenuItem theLink="/cleaning-site/Home" info="Home" />
       <MenuItem
-        theLink="/cleaning-site/Services"
+        theLink="noLink"
         info="Services"
         additionalClassNames={["dropdown"]}
         additionalMenuItems={[
           <div className="dropdown-content">
             <MenuItem theLink="/cleaning-site/Services" info="Service1" />
-            <MenuItem theLink="/cleaning-site/Services" info="Service2" />
-            <MenuItem theLink="/cleaning-site/Services" info="Service3" />
+            <MenuItem
+              theLink="/cleaning-site/Services"
+              info="Move Out Cleaning"
+            />
+            <MenuItem theLink="/cleaning-site/Services" info="Other Stuff" />
+            <MenuItem
+              theLink="/cleaning-site/Services"
+              info="Move in Cleaning"
+            />
           </div>,
         ]}
       />

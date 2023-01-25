@@ -13,6 +13,15 @@ function MenuItem(props) {
     divClasses += props.additionalClassNames.map(joinClassNames);
   }
 
+  if (theLink === "noLink") {
+    return (
+      <div className={divClasses + " " + theLink}>
+        <div>{info}</div>
+        {props.additionalMenuItems}
+      </div>
+    );
+  }
+
   return (
     <div className={divClasses}>
       <Link to={theLink} className={linkClasses}>

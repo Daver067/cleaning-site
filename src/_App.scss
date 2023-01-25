@@ -1,0 +1,35 @@
+/* Media Queries */
+$media_queries: (
+  "mobile": unquote("only screen and (max-width: 667px)"),
+  "tablet":
+    unquote("only screen and (min-width: 668px) and (max-width: 1150px)"),
+  "desktop": unquote("only screen and (min-width: 1150px)"),
+);
+
+@mixin for_breakpoint($breakpoints) {
+  $conditions: ();
+  @each $breakpoint in $breakpoints {
+    // If the key exists in the map
+    $conditions: append(
+      $conditions,
+      #{inspect(map-get($media_queries, $breakpoint))},
+      comma
+    );
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}
+
+:root {
+  @include for_breakpoint(mobile) {
+    font-size: 10px;
+  }
+  @include for_breakpoint(tablet) {
+    font-size: 13px;
+  }
+  @include for_breakpoint(desktop) {
+    font-size: 16px;
+  }
+}

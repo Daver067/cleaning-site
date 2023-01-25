@@ -1,11 +1,14 @@
+@import "../../SassVars";
+
 #NavBar {
   font-size: 2rem;
   color: white;
-  background-color: black;
+  background-color: $secondary-color-light;
   height: 2em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .menuItem {
     width: 25vw;
@@ -20,10 +23,12 @@
       }
     }
     .dropdown-content {
-      display: none;
+      visibility: hidden;
+      transition: opacity 0.3s ease-out;
+      opacity: 0;
       position: absolute;
-      background-color: black;
-      padding-top: 0.5em;
+      background-color: $secondary-color-light;
+      padding-top: 0.75em;
       min-width: 25vw;
       z-index: 1;
       > .menuItem {
@@ -40,7 +45,7 @@
         text-align: center;
       }
       &:hover {
-        background-color: black;
+        background-color: $secondary-color-light;
       }
     }
 
@@ -49,12 +54,17 @@
       overflow: hidden;
     }
     &:hover .dropdown-content {
+      opacity: 1;
+      visibility: visible;
       display: block;
     }
   }
 
   .menuItem .link:hover,
   .dropdown:hover .link {
-    background-color: black;
+    background-color: $secondary-color-light;
+  }
+  .noLink {
+    cursor: default;
   }
 }

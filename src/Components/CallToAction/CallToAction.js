@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./CallToAction.scss";
 
 function CallToAction() {
   return (
     <div id="CallToAction">
-      <h1 className="center">Company Name</h1>
-      <h3 className="center">Location</h3>
+      <h1 className="center">Calgary Move Out Cleaners</h1>
       <div className="center">
         <button>Call Us: Phone Num</button>
       </div>
