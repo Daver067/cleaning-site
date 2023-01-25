@@ -14,7 +14,7 @@ import Contact from "./Components/Contact/Contact";
 import Services from "./Components/Services/Services";
 import AboutUs from "./Components/AboutUs/AboutUs";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/cleaning-site",
     element: <App />,
