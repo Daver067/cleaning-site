@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 function NavBar() {
   return (
     <div id="NavBar">
-      <MenuItem theLink="/Home" info="Home" />
+      <MenuItem theLink="/" info="Home" />
       <MenuItem
         theLink="noLink"
         info="Services"
