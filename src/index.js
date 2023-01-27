@@ -16,25 +16,29 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
-    path: "/cleaning-site",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/cleaning-site/Home",
+        path: "/Home",
         element: <Home />,
+        errorElement: <ErrorPage />,
       },
       {
-        path: "/cleaning-site/Contact",
+        path: "/Contact",
         element: <Contact />,
+        errorElement: <ErrorPage />,
       },
       {
-        path: "/cleaning-site/Services",
+        path: "/Services",
         element: <Services />,
+        errorElement: <ErrorPage />,
       },
       {
-        path: "/cleaning-site/AboutUs",
+        path: "/AboutUs",
         element: <AboutUs />,
+        errorElement: <ErrorPage />,
       },
     ],
   },

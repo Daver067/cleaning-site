@@ -1,0 +1,35 @@
+.header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+  + p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  background: rgb(177, 237, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(177, 237, 232, 1) 0%,
+    rgba(195, 233, 222, 0.700717787114846) 0%,
+    rgba(88, 171, 164, 0) 96%
+  );
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
