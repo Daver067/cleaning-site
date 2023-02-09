@@ -4,3 +4,27 @@ $main-color-light: #b1ede8;
 $feaure-color: #ffcaaf;
 $secondary-color: #1c0221;
 $secondary-color-light: #493843;
+
+/* Media Queries */
+$media_queries: (
+  "mobile": unquote("only screen and (max-width: 667px)"),
+  "tablet":
+    unquote("only screen and (min-width: 668px) and (max-width: 1150px)"),
+  "desktop": unquote("only screen and (min-width: 1150px)"),
+);
+
+@mixin for_breakpoint($breakpoints) {
+  $conditions: ();
+  @each $breakpoint in $breakpoints {
+    // If the key exists in the map
+    $conditions: append(
+      $conditions,
+      #{inspect(map-get($media_queries, $breakpoint))},
+      comma
+    );
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}

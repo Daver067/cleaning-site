@@ -1,9 +1,22 @@
 @import "../../SassVars";
 #contactFormContainer {
-  margin-right: 7em;
-  margin-top: -2em;
+  @include for_breakpoint(desktop tablet) {
+    margin-right: 7em;
+    margin-left: 1em;
+    margin-top: -2em;
+    float: right;
+  }
+  @include for_breakpoint(mobile) {
+    margin: 1em 1em 2em 1.5em;
+  }
+
   #contactForm {
-    width: 30vw;
+    @include for_breakpoint(desktop tablet) {
+      width: 30vw;
+    }
+    @include for_breakpoint(mobile) {
+      width: 90%;
+    }
 
     padding: 1em 1em 1.75em 1em;
     line-height: 2.5;

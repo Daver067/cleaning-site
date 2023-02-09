@@ -1,3 +1,5 @@
+@import "../SassVars";
+
 .content {
   .header {
     font-size: 3rem;
@@ -6,11 +8,20 @@
     padding: 0.5em;
   }
   p {
-    line-height: 1.5;
-    font-size: 1.1rem;
-    margin-left: 7em;
-    margin-right: 3em;
-    margin-bottom: 0;
+    @include for_breakpoint(desktop tablet) {
+      line-height: 1.5;
+      font-size: 1.1rem;
+      margin-left: 7em;
+      margin-right: 3em;
+      margin-bottom: 8em;
+    }
+    @include for_breakpoint(mobile) {
+      line-height: 1.5;
+      font-size: 1.1rem;
+      margin-left: 3em;
+      margin-right: 3em;
+      margin-bottom: 8em;
+    }
   }
   &.contact {
     background: rgb(177, 237, 232);
@@ -20,9 +31,6 @@
       rgba(195, 233, 222, 0.700717787114846) 0%,
       rgba(88, 171, 164, 0) 96%
     );
-  }
-  div + p {
-    margin-bottom: 8em;
   }
 }
 .footer {
@@ -35,8 +43,4 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-}
-
-.flex {
-  display: flex;
 }
