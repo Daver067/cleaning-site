@@ -3,6 +3,9 @@
 :root {
   @include for_breakpoint(mobile) {
     font-size: 10px;
+    input:focus {
+      font-size: 10px;
+    }
   }
   @include for_breakpoint(tablet) {
     font-size: 13px;
