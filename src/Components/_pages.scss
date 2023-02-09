@@ -1,28 +1,30 @@
-.header {
-  font-size: 3rem;
-  text-align: center;
-  margin: 0;
-  padding: 0.5em;
-  + p {
+.content {
+  .header {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+  }
+  p {
     line-height: 1.5;
     font-size: 1.1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 7em;
+    margin-right: 3em;
     margin-bottom: 0;
-    padding-bottom: 8em;
+  }
+  &.contact {
+    background: rgb(177, 237, 232);
+    background: linear-gradient(
+      90deg,
+      rgba(177, 237, 232, 1) 0%,
+      rgba(195, 233, 222, 0.700717787114846) 0%,
+      rgba(88, 171, 164, 0) 96%
+    );
+  }
+  div + p {
+    margin-bottom: 8em;
   }
 }
-
-.contact {
-  background: rgb(177, 237, 232);
-  background: linear-gradient(
-    90deg,
-    rgba(177, 237, 232, 1) 0%,
-    rgba(195, 233, 222, 0.700717787114846) 0%,
-    rgba(88, 171, 164, 0) 96%
-  );
-}
-
 .footer {
   background-color: black;
   color: white;
@@ -33,4 +35,8 @@
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+
+.flex {
+  display: flex;
 }

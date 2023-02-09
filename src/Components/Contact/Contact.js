@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact content">
       <h1 className="header">Contact</h1>
       <p>
         Duis condimentum mauris vitae malesuada efficitur. Nulla vitae tortor ac

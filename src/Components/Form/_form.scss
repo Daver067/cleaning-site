@@ -1,0 +1,103 @@
+@import "../../SassVars";
+#contactFormContainer {
+  margin-right: 7em;
+  margin-top: -2em;
+  #contactForm {
+    width: 30vw;
+
+    padding: 1em 1em 1.75em 1em;
+    line-height: 2.5;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    input {
+      margin-left: 0.5em;
+      height: 1.75em;
+      border: none;
+      border-bottom: 1px solid black;
+      padding-left: 0.5em;
+      &:focus {
+        background-color: rgb(235, 222, 222);
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 0em 0.5em 0.5em 0.5em;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: rgb(250, 215, 10);
+      text-underline-offset: 0.5em;
+      text-decoration-thickness: 5px;
+    }
+    .nameNum {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4em;
+      input {
+        width: 80%;
+      }
+    }
+    .email {
+      margin-top: 1em;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      input {
+        padding-right: -3em;
+        width: 95%;
+      }
+    }
+    .services {
+      display: flex;
+      flex-direction: column;
+      select {
+        width: 50%;
+        font-size: 1.1rem;
+        height: 1.75em;
+        border: none;
+        background-color: white;
+        padding-left: 0.5em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+    }
+    .date {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 25%;
+      }
+    }
+    .sqftBathroom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4em;
+      input {
+        width: 60%;
+      }
+    }
+    .requests {
+      display: flex;
+      flex-direction: column;
+    }
+    .button {
+      text-align: center;
+      margin-top: 1.5em;
+      button {
+        width: 45%;
+        font-size: 1.5rem;
+        border-radius: 12px;
+        padding: 0.25em;
+        background-color: #695261;
+        color: rgb(240, 240, 240);
+        &:hover {
+          background-color: #886b7d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

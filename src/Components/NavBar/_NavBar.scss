@@ -1,14 +1,16 @@
 @import "../../SassVars";
 
 #NavBar {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   background-color: $secondary-color-light;
-  height: 2em;
+  height: 2.2em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  top: 0;
 
   .menuItem {
     width: 25vw;

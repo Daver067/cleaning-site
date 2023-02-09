@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="content">
       <h1 className="header">AboutUs</h1>
       <p>
         Ut tempor mattis nisi, vitae pretium ipsum ultricies sed. Donec commodo
