@@ -16,12 +16,16 @@
     text-underline-offset: 0.5em;
     @include for_breakpoint(mobile) {
       text-underline-offset: 0.2em;
+      width: 50%;
     }
     color: $main-color;
     font-family: "Roboto", sans-serif;
   }
   .container {
     width: 38%;
+    @include for_breakpoint(mobile) {
+      width: 50%;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +33,9 @@
     .cta-num {
       width: 75%;
       font-size: 1rem;
+      @include for_breakpoint(mobile) {
+        font-size: 0.85rem;
+      }
       padding: 1rem 1rem;
       margin: auto;
       text-align: left;

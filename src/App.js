@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import CallToAction from "./Components/CallToAction/CallToAction";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 
 function App() {

@@ -1,0 +1,49 @@
+@import "../../SassVars";
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  font-size: 0.75rem;
+
+  @include for_breakpoint(mobile) {
+    font-size: 0.5rem;
+  }
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 100%;
+  bottom: 0;
+  .location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  .legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  img {
+    width: 32px;
+    @include for_breakpoint(mobile) {
+      width: 20px;
+    }
+    &:hover {
+      width: 38px;
+      cursor: pointer;
+      @include for_breakpoint(mobile) {
+        width: 24px;
+      }
+    }
+  }
+}

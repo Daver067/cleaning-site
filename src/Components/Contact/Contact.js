@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import backgroundImage from "../../images/contactUs.jpg";
 import ContactForm from "../Form/Form";
 
