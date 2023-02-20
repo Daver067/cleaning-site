@@ -2,20 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 #CallToAction {
-  background-color: rgb(218, 214, 214);
+  background-color: rgb(255, 255, 255);
   display: flex;
   height: 15vh;
 
   h1 {
-    width: 66%;
+    width: 62%;
     margin: auto;
     font-size: 2.5rem;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 215, 10);
+    text-underline-offset: 0.5em;
+    @include for_breakpoint(mobile) {
+      text-underline-offset: 0.2em;
+    }
     color: $main-color;
     font-family: "Roboto", sans-serif;
   }
   .container {
-    width: 34%;
+    width: 38%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +31,7 @@
       font-size: 1rem;
       padding: 1rem 1rem;
       margin: auto;
-      text-align: center;
+      text-align: left;
       border-radius: 1rem;
       &:hover {
         color: $secondary-color-light;

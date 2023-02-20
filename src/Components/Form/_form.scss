@@ -1,9 +1,11 @@
 @import "../../SassVars";
 #contactFormContainer {
+  background-color: white;
   @include for_breakpoint(desktop tablet) {
-    margin-right: 7em;
-    margin-left: 1em;
-    margin-top: -2em;
+    margin-right: 3em;
+    margin-left: 1.5em;
+    margin-top: -7em;
+    margin-bottom: 1em;
     float: right;
   }
   @include for_breakpoint(mobile) {
@@ -26,6 +28,9 @@
     font-size: 1.2rem;
 
     input {
+      @include for_breakpoint(mobile) {
+        font-size: 16px;
+      }
       margin-left: 0.5em;
       height: 1.75em;
       border: none;
@@ -33,6 +38,9 @@
       padding-left: 0.5em;
       &:focus {
         background-color: rgb(235, 222, 222);
+        @include for_breakpoint(mobile) {
+          font-size: 16px;
+        }
       }
     }
     h3 {

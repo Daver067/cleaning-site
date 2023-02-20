@@ -1,13 +1,40 @@
 @import "../SassVars";
 
 .content {
-  .header {
-    font-size: 3rem;
+  .header-container {
+    z-index: -1;
+    position: relative;
     text-align: center;
-    margin: 0;
-    padding: 0.5em;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    @include for_breakpoint(desktop) {
+      height: 50vh;
+      background-attachment: fixed;
+    }
+    @include for_breakpoint(mobile) {
+      height: 20vh;
+    }
+    @include for_breakpoint(tablet) {
+      height: 35vh;
+    }
+
+    .header {
+      font-size: 3rem;
+      text-align: center;
+      margin: auto;
+    }
+    .centered {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   p {
+    background-color: white;
     @include for_breakpoint(desktop tablet) {
       line-height: 1.5;
       font-size: 1.1rem;
@@ -23,14 +50,8 @@
       margin-bottom: 8em;
     }
   }
-  &.contact {
-    background: rgb(177, 237, 232);
-    background: linear-gradient(
-      90deg,
-      rgba(177, 237, 232, 1) 0%,
-      rgba(195, 233, 222, 0.700717787114846) 0%,
-      rgba(88, 171, 164, 0) 96%
-    );
+  img {
+    width: 100%;
   }
 }
 .footer {

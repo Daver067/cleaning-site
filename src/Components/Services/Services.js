@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "../Form/Form";
+import backgroundImage from "../../images/broom.jpg";
 
 function Services() {
   return (
     <div className="content">
-      <h1 className="header">Services</h1>
+      <div
+        className="header-container"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
+        }}
+      >
+        <h1 className="header centered">Services</h1>
+      </div>
       <p>
         <ContactForm />
         Proin a enim mattis, elementum velit et, volutpat libero. Nunc sit amet

@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
+import backgroundImage from "../../images/windowWash.jpg";
 
 function AboutUs() {
   return (
     <div className="content">
-      <h1 className="header">AboutUs</h1>
+      <div
+        className="header-container"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
+        }}
+      >
+        <h1 className="header centered">About Us</h1>
+      </div>
       <p>
         Ut tempor mattis nisi, vitae pretium ipsum ultricies sed. Donec commodo
         lobortis velit. Phasellus aliquet placerat augue quis placerat. Sed
