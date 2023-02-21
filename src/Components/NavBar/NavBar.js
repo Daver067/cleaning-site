@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import MenuItem from "./MenuItem";
 
 function NavBar() {
@@ -11,10 +11,10 @@ function NavBar() {
         additionalClassNames={["dropdown"]}
         additionalMenuItems={[
           <div className="dropdown-content">
-            <MenuItem theLink="/Services" info="Service1" />
+            <MenuItem theLink="/Services" info="Residential Cleaning" />
             <MenuItem theLink="/Services" info="Move Out Cleaning" />
-            <MenuItem theLink="/Services" info="Other Stuff" />
-            <MenuItem theLink="/Services" info="Move in Cleaning" />
+            <MenuItem theLink="/Services" info="Commercial Cleaning" />
+            <MenuItem theLink="/Services" info="Move In Cleaning" />
           </div>,
         ]}
       />

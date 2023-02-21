@@ -1,0 +1,38 @@
+@import "../../SassVars";
+
+.imageBesideText {
+  margin: 4rem 0;
+  font-size: 1.1rem;
+  @include for_breakpoint(mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 45%;
+    margin: 0 2em 1em 2em;
+    @include for_breakpoint(mobile) {
+      width: 90%;
+      margin: 2em;
+    }
+  }
+  p {
+    position: relative;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 2em 2em 2em;
+    @include for_breakpoint(mobile) {
+      padding: 2em;
+    }
+    span {
+      display: block;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: rgb(250, 215, 10);
+      text-underline-offset: 0.25em;
+      margin-bottom: 1em;
+    }
+  }
+}

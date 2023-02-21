@@ -1,0 +1,24 @@
+@import "../../SassVars";
+
+.threeImage-container {
+  @include for_breakpoint(mobile) {
+    font-size: 0.6rem;
+  }
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  box-sizing: border-box;
+  .image-container {
+    font-size: 1.5em;
+    text-align: center;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+  img {
+    width: 20vw;
+    height: 20vw;
+  }
+}

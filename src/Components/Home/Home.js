@@ -2,6 +2,12 @@ import React from "react";
 import ContactForm from "../Form/Form";
 import backgroundImage from "../../images/wipe.jpg";
 
+// for the 3 images subcomponent
+import ThreeImages from "../miniComponents/threeImages";
+import broom2 from "../../images/broom2.jpg";
+import gloves from "../../images/gloves.jpg";
+import vaccuum from "../../images/vaccuum.jpg";
+
 function Home() {
   return (
     <div className="content">
@@ -13,7 +19,7 @@ function Home() {
       >
         <h1 className="header centered">Home</h1>
       </div>
-      <p>
+      <p className="mainP">
         <ContactForm />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet
         eget augue eu feugiat. Morbi eu quam tristique, fermentum ligula sit
@@ -84,6 +90,24 @@ function Home() {
         augue maximus. Pellentesque dui tortor, lobortis porttitor consectetur
         tincidunt, dapibus ut tortor. Ut feugiat pretium posuere.
       </p>
+
+      <ThreeImages
+        imageLeft={{
+          src: broom2,
+          text: "Residential Cleaning",
+          theLink: "/Services",
+        }}
+        imageCenter={{
+          src: gloves,
+          text: "Move Out Cleaning",
+          theLink: "/Services",
+        }}
+        imageRight={{
+          src: vaccuum,
+          text: "Commercial Cleaning",
+          theLink: "/Services",
+        }}
+      />
     </div>
   );
 }

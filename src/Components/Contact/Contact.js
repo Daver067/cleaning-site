@@ -13,14 +13,15 @@ function Contact() {
       >
         <h1 className="header centered">Contact</h1>
       </div>
-      <p>
+
+      <p className="mainP">
         <ContactForm />
         Duis condimentum mauris vitae malesuada efficitur. Nulla vitae tortor ac
         enim aliquet pretium ac et risus. Integer ut consectetur magna.
         Vestibulum viverra, arcu vel vulputate ultricies, quam ex porta dui,
         laoreet iaculis ligula felis eu quam. Suspendisse potenti. Cras aliquam
         diam et sem pretium, in commodo quam venenatis. Sed euismod massa eu
-        tellus malesuada ultrices. Praesent et nibh sit amet risus tincidunt
+        tellus malesu ada ultrices. Praesent et nibh sit amet risus tincidunt
         sodales ac id dui. Duis euismod purus ut elit viverra dictum. Nullam
         tincidunt lectus quis venenatis fringilla. Vestibulum tincidunt eleifend
         volutpat. Mauris vel ipsum ac tortor congue feugiat aliquet sed diam. In

@@ -33,7 +33,7 @@
       transform: translate(-50%, -50%);
     }
   }
-  p {
+  .mainP {
     background-color: white;
     @include for_breakpoint(desktop tablet) {
       line-height: 1.5;

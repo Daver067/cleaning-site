@@ -13,7 +13,7 @@ function Services() {
       >
         <h1 className="header centered">Services</h1>
       </div>
-      <p>
+      <p className="mainP">
         <ContactForm />
         Proin a enim mattis, elementum velit et, volutpat libero. Nunc sit amet
         pharetra nulla. Sed eget leo at elit blandit efficitur. Nunc a turpis
