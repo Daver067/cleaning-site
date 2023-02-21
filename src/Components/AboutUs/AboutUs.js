@@ -92,7 +92,7 @@ function AboutUs() {
         fringilla et. Pellentesque et rhoncus diam. Interdum et malesuada fames
         ac ante ipsum primis in faucibus."
       />
-
+      <br></br>
       <ImageBesideText
         imageSrc={commercialWash}
         floatDirection="left"
