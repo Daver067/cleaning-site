@@ -14,7 +14,7 @@ function Services() {
         <h1 className="header centered">Services</h1>
       </div>
       <p className="mainP">
-        <ContactForm />
+        <ContactForm formName="services" />
         Proin a enim mattis, elementum velit et, volutpat libero. Nunc sit amet
         pharetra nulla. Sed eget leo at elit blandit efficitur. Nunc a turpis
         sapien. Ut eget neque ullamcorper risus eleifend imperdiet. Mauris ipsum

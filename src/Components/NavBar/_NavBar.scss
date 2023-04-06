@@ -26,8 +26,7 @@
       }
     }
     .dropdown-content {
-      visibility: hidden;
-      transition: opacity 0.3s ease-out;
+      transition: opacity 0.95s ease-in-out;
       opacity: 0;
       position: absolute;
       background-color: $secondary-color-light;
@@ -54,6 +53,9 @@
       &:hover {
         background-color: $secondary-color-light;
       }
+      &:not(:hover) {
+        opacity: 0;
+      }
     }
 
     & .dropdown {
@@ -73,5 +75,17 @@
   }
   .noLink {
     cursor: default;
+    #carat {
+      transition: transform 0.75s ease-in-out;
+      display: inline-block;
+      &:not(:hover) {
+        transform: rotate(0deg);
+      }
+    }
+    &:hover {
+      #carat {
+        transform: rotate(-540deg);
+      }
+    }
   }
 }

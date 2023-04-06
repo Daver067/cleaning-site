@@ -13,11 +13,33 @@ function MenuItem(props) {
     divClasses += props.additionalClassNames.map(joinClassNames);
   }
 
+  // all of this is just to have the hover fade back out when mouse exits
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseExit = () => {
+    setIsHovered(true);
+    setTimeout(() => {
+      setIsHovered(false);
+    }, 800);
+  };
+  const style = {
+    visibility: isHovered ? "visible" : "hidden",
+  };
+  //
+
   if (theLink === "noLink") {
     return (
-      <div className={divClasses + " " + theLink}>
-        <div>{info}</div>
-        {props.additionalMenuItems}
+      <div
+        className={divClasses + " " + theLink}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseExit}
+      >
+        <div>
+          {info} <span id="carat">{String.fromCharCode(9660)}</span>
+        </div>
+        <div style={style}>{props.additionalMenuItems}</div>
       </div>
     );
   }

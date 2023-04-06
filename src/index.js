@@ -9,6 +9,10 @@ import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import Services from "./Components/Services/Services";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Residential from "./Components/Services/Residential";
+import MoveInCleaning from "./Components/Services/Move-In-Cleaning";
+import MoveOutCleaning from "./Components/Services/Move-Out-Cleaning";
+import Commercial from "./Components/Services/Commercial";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +31,28 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
+        path: "/Residential",
+        element: <Residential />,
+        errorElement: <ErrorPage />,
+      },
+      {
         path: "/Services",
         element: <Services />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/Move-Out-Cleaning",
+        element: <MoveOutCleaning />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/Commercial",
+        element: <Commercial />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/Move-In-Cleaning",
+        element: <MoveInCleaning />,
         errorElement: <ErrorPage />,
       },
       {

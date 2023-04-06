@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function ContactForm() {
+function ContactForm({ formName }) {
   return (
     <div id="contactFormContainer">
-      <form id="contactForm">
+      <form id="contactForm" method="POST" name={formName} data-netlify="true">
+        <input type="hidden" name="form-name" value={formName} />
         <div>
           <h3>Request a Quote!</h3>
         </div>

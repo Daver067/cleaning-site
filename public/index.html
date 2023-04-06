@@ -27,7 +27,6 @@
     <title>Calgary Move Out Cleaners</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +38,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <form name="home" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" id="name" name="name" required />
+      <input type="tel" id="phone" name="phone" required />
+      <input type="email" name="email" />
+      <select name="services" id="services" required>
+        <option value="move-out-clean">Move Out Clean</option>
+        <option value="move-in-clean">Move In Clean</option>
+        <option value="deep-clean">Deep Clean</option>
+      </select>
+      <input type="date" id="date" name="date" required />
+      <input type="text" id="sqft" name="sqft" />
+      <input type="text" id="bathrooms" name="bathrooms" />
+      <input type="text" id="requests" name="requests" />
+    </form>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" id="name" name="name" required />
+      <input type="tel" id="phone" name="phone" required />
+      <input type="email" name="email" />
+      <select name="services" id="services" required>
+        <option value="move-out-clean">Move Out Clean</option>
+        <option value="move-in-clean">Move In Clean</option>
+        <option value="deep-clean">Deep Clean</option>
+      </select>
+      <input type="date" id="date" name="date" required />
+      <input type="text" id="sqft" name="sqft" />
+      <input type="text" id="bathrooms" name="bathrooms" />
+      <input type="text" id="requests" name="requests" />
+    </form>
+    <form name="services" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" id="name" name="name" required />
+      <input type="tel" id="phone" name="phone" required />
+      <input type="email" name="email" />
+      <select name="services" id="services" required>
+        <option value="move-out-clean">Move Out Clean</option>
+        <option value="move-in-clean">Move In Clean</option>
+        <option value="deep-clean">Deep Clean</option>
+      </select>
+      <input type="date" id="date" name="date" required />
+      <input type="text" id="sqft" name="sqft" />
+      <input type="text" id="bathrooms" name="bathrooms" />
+      <input type="text" id="requests" name="requests" />
+    </form>
   </body>
 </html>

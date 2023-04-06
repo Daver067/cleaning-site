@@ -11,10 +11,10 @@ function NavBar() {
         additionalClassNames={["dropdown"]}
         additionalMenuItems={[
           <div className="dropdown-content">
-            <MenuItem theLink="/Services" info="Residential Cleaning" />
-            <MenuItem theLink="/Services" info="Move Out Cleaning" />
-            <MenuItem theLink="/Services" info="Commercial Cleaning" />
-            <MenuItem theLink="/Services" info="Move In Cleaning" />
+            <MenuItem theLink="/Residential" info="Residential Cleaning" />
+            <MenuItem theLink="/Move-Out-Cleaning" info="Move Out Cleaning" />
+            <MenuItem theLink="/Commercial" info="Commercial Cleaning" />
+            <MenuItem theLink="/Move-In-Cleaning" info="Move In Cleaning" />
           </div>,
         ]}
       />
