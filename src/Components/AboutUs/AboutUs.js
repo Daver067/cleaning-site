@@ -18,10 +18,10 @@ function AboutUs() {
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
         }}
       >
-        <h1 className="header centered">About Us</h1>
+        <h2 className="header centered">About Us</h2>
       </div>
       <p className="mainP">
-        <h1>How We Shine</h1>
+        <h2>How We Shine</h2>
         As a cleaning company based in Calgary, we understand the challenges of
         attracting new customers and standing out in a crowded marketplace. In
         order to grow our business and impress potential clients, we have

@@ -11,12 +11,12 @@ function Contact() {
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
         }}
       >
-        <h1 className="header centered">Contact</h1>
+        <h2 className="header centered">Contact</h2>
       </div>
 
       <p className="mainP">
         <ContactForm formName="home" />
-        <h1>Why Choose Us?</h1>
+        <h2>Why Choose Us?</h2>
         As a professional cleaning company, we believe that contacting us can
         provide many benefits for individuals and businesses alike. Whether you
         need a one-time deep cleaning or ongoing maintenance, we have the

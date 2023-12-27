@@ -8,8 +8,10 @@ function Footer() {
     <div id="footer">
       <div className="location">
         <img src={Map} alt="map"></img>
-        <p>55 Scollard Road, Calgary, AB, Canada</p>
+        <p>Calgary, AB, Canada</p>
       </div>
+      {/*
+
       <div className="legal">
         <img src={Legal} alt="legal"></img>
         <p>
@@ -22,6 +24,7 @@ function Footer() {
         <img src={Phone} alt="phone"></img>
         <p>Call us: (555) 555-5555</p>
       </div>
+      */}
     </div>
   );
 }

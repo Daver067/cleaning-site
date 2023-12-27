@@ -5,10 +5,12 @@ import BlackEmail from "../../images/icons/emailBlack.svg";
 function CallToAction() {
   return (
     <div id="CallToAction">
-      <h1>Calgary Move Out Cleaners</h1>
+      <h1>Professional Move Out Cleaners Calgary</h1>
+      {/* 
       <div className="container">
         <div className="cta-num">
           <img src={PhoneBlack} alt="phone"></img>
+
           Call Us: (555) 555-5555
         </div>
 
@@ -17,6 +19,7 @@ function CallToAction() {
           Email Us: thisisanemail@email.com
         </div>
       </div>
+        */}
     </div>
   );
 }

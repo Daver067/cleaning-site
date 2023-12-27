@@ -16,13 +16,11 @@ function Home() {
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
         }}
-      >
-        <h1 className="header centered">Home</h1>
-      </div>
+      ></div>
 
       <p className="mainP">
         <ContactForm formName="home" />
-        <h1>What Is Move Out Cleaning?</h1>
+        <h2>What Is Move Out Cleaning?</h2>
         Moving out of a home can be an exciting time, but it can also be
         stressful and overwhelming. One of the most important things to take
         care of when moving out is to ensure that the home is clean and in good
@@ -42,19 +40,21 @@ function Home() {
         services in Calgary also include cleaning the outside of the home. This
         may involve cleaning the windows, the exterior of the home, and the
         garage. The cleaning company will ensure that the home looks presentable
-        and attractive to potential buyers or renters. When hiring a move out
-        cleaning company in Calgary, it is important to choose a reputable
-        company with experience in this type of cleaning. A good cleaning
-        company will provide a detailed list of the cleaning services they offer
-        and will work with you to customize a cleaning plan that meets your
-        needs and budget. The cost of move out cleaning in Calgary varies
-        depending on the size of the home and the extent of the cleaning
-        required. However, it is generally affordable and worth the investment
-        to ensure that the home is left in a clean and presentable condition.
-        One of the benefits of hiring a professional move out cleaning company
-        in Calgary is that it can save you time and energy. Moving out of a home
-        can be a stressful and time-consuming process, and cleaning the home
-        yourself can add to that stress. <br />
+        and attractive to potential buyers or renters. When hiring{" "}
+        <a href="https://www.calgarymoveoutcleaning.ca/" className="linkout">
+          move out cleaners Calgary
+        </a>
+        , it is important to choose a reputable company with experience in this
+        type of cleaning. A good cleaning company will provide a detailed list
+        of the cleaning services they offer and will work with you to customize
+        a cleaning plan that meets your needs and budget. The cost of move out
+        cleaning in Calgary varies depending on the size of the home and the
+        extent of the cleaning required. However, it is generally affordable and
+        worth the investment to ensure that the home is left in a clean and
+        presentable condition. One of the benefits of hiring a professional move
+        out cleaning company in Calgary is that it can save you time and energy.
+        Moving out of a home can be a stressful and time-consuming process, and
+        cleaning the home yourself can add to that stress. <br />
         <br />
         By hiring a professional cleaning company, you can focus on other
         aspects of the move, such as packing and organizing, while the cleaning
