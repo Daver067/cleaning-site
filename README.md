@@ -1,5 +1,9 @@
 # This is hosted on NETLIFY
 
+note to self
+To re-publish, check the package.json, a couple scripts in there do it for ya!
+npm run build, and then npm run deploy should do it for ya
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
