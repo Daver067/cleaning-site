@@ -3,6 +3,11 @@ import backgroundImage from "../../images/contactUs.jpg";
 import ContactForm from "../Form/Form";
 
 function Contact() {
+  {
+    document.title = "Calgary Move Out Cleaners | Contact Us";
+    document.getElementsByTagName("META")[3].content =
+      "As a professional cleaning company, we believe that contacting us can provide many benefits for individuals and businesses alike.";
+  }
   return (
     <div className="contact content">
       <div

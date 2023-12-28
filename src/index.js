@@ -36,11 +36,6 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/Services",
-        element: <Services />,
-        errorElement: <ErrorPage />,
-      },
-      {
         path: "/Move-Out-Cleaning",
         element: <MoveOutCleaning />,
         errorElement: <ErrorPage />,

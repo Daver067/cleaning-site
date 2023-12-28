@@ -9,6 +9,11 @@ import vaccuum from "../../images/vaccuum.jpg";
 import commercialWash from "../../images/commercialWash.jpg";
 
 function Commercial() {
+  {
+    document.title = "Calgary Move Out Cleaners | Commercial Cleaning";
+    document.getElementsByTagName("META")[3].content =
+      "Maintaining a clean and hygienic workplace is essential for the success of any business. A clean and organized workspace not only creates a positive impression on clients and customers but also promotes the health and wellbeing of employees.";
+  }
   return (
     <div className="content">
       <div

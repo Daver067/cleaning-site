@@ -9,6 +9,11 @@ import gloves from "../../images/gloves.jpg";
 import vaccuum from "../../images/vaccuum.jpg";
 
 function Home() {
+  {
+    document.title = "Calgary Move Out Cleaners";
+    document.getElementsByTagName("META")[3].content =
+      "We will handle all of your move out cleaning needs!";
+  }
   return (
     <div className="content">
       <div

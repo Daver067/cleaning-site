@@ -9,6 +9,11 @@ import vaccuum from "../../images/vaccuum.jpg";
 import commercialWash from "../../images/commercialWash.jpg";
 
 function MoveInCleaning() {
+  {
+    document.title = "Calgary Move Out Cleaners | Move In Cleaning";
+    document.getElementsByTagName("META")[3].content =
+      "One of the most significant advantages of hiring a move-in cleaner is that it provides a fresh start. Even if your new home looks clean at first glance, there may be hidden dust, dirt, and grime that can accumulate over time.";
+  }
   return (
     <div className="content">
       <div

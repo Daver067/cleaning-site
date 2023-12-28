@@ -10,6 +10,11 @@ import ThreeImages from "../miniComponents/threeImages";
 import ImageBesideText from "../miniComponents/imageBesideText";
 
 function AboutUs() {
+  {
+    document.title = "Calgary Move Out Cleaners | About Us";
+    document.getElementsByTagName("META")[3].content =
+      "As a cleaning company based in Calgary, we understand the challenges of attracting new customers and standing out in a crowded marketplace.";
+  }
   return (
     <div className="content">
       <div

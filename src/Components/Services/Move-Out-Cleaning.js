@@ -9,6 +9,11 @@ import vaccuum from "../../images/vaccuum.jpg";
 import commercialWash from "../../images/commercialWash.jpg";
 
 function MoveOutCleaning() {
+  {
+    document.title = "Calgary Move Out Cleaners | Move Out Cleaning";
+    document.getElementsByTagName("META")[3].content =
+      "The first step in performing a move out clean is to conduct an initial assessment of the rental property. The cleaning company will visit the property to evaluate the extent of the cleaning needed and to provide a quote for the service.";
+  }
   return (
     <div className="content">
       <div

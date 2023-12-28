@@ -9,6 +9,11 @@ import vaccuum from "../../images/vaccuum.jpg";
 import commercialWash from "../../images/commercialWash.jpg";
 
 function Residential() {
+  {
+    document.title = "Calgary Move Out Cleaners | Residential Cleaning";
+    document.getElementsByTagName("META")[3].content =
+      "Residential cleaning is a service that is provided by professional cleaning companies to keep homes clean and tidy. It involves a range of cleaning tasks, including dusting, vacuuming, mopping, and scrubbing surfaces, to ensure that homes are in good condition and free from dirt and germs.";
+  }
   return (
     <div className="content">
       <div

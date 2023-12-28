@@ -27,33 +27,3 @@ function ThreeImages(props) {
 }
 
 export default ThreeImages;
-/*
-import ThreeImages from "../miniComponents/threeImages";
-import broom2 from "../../images/broom2.jpg";
-import gloves from "../../images/gloves.jpg";
-import vaccuum from "../../images/vaccuum.jpg";
-import commercialWash from "../../images/commercialWash.jpg";
-
-<ThreeImages
-        imageLeft={{
-          src: vaccuum,
-          text: "Move In Cleaning",
-          theLink: "/Move-In-Cleaning",
-        }}
-        imageCenter={{
-          src: gloves,
-          text: "Move Out Cleaning",
-          theLink: "/Move-Out-Cleaning",
-        }}
-        imageRight={{
-          src: commercialWash,
-          text: "Commercial Cleaning",
-          theLink: "/Commercial",
-        }}
-          imageRight={{
-          src: broom2,
-          text: "Residential Cleaning",
-          theLink: "/Residential",
-        }}
-      />
-*/
